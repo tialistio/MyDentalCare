@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">My Dental Care</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">My Dental Care</string>
+    <string name="nav_header_subtitle">mydentalscore.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_result">결과 확인</string>
+
+    <string name="main_menu_text1">
+        나의 구강건강은 나의 상상하는 것보다
+        매우 중요합니다.
+    </string>
+    <string name="main_menu_text2"> 구강 건강이 좋을수록 건강 해집니다. 덴탈 시그널은 치아와 잇몸의 건강과 전반적인 건강을 연결하는 데 도움을주기 위해 개발되었습니다. 위의 내 치과 스코어 견적 링크를 클릭하여 무료 치과 점수를 받으십시오. \엔 덴털 진단를 받으면 전문 치과 검사 중에 수집 된 정보로 해당 점수를 확인할 수있는 치과 의사와 결과를상의 할 수 있습니다. </string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_scoring_1">내 치아에 대해</string>
 </resources>

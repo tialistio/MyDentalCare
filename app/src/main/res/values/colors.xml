@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#0691b8</color>
     <color name="colorAccent">#FF4081</color>
     <color name="white">#ffffff</color>
+    <color name="actionbar_color">#bf360c</color>
+    <color name="drawer_arrow_second_color">#303f9f</color>
+    <color name="transparent">#11000000</color>
 </resources>

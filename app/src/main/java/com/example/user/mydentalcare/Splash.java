@@ -26,7 +26,7 @@ public class Splash extends AppCompatActivity {
         tv_splash.startAnimation(myanim);
         iv_splash.startAnimation(myanim);
 
-        final Intent i = new Intent(this, MainActivity.class);
+        final Intent i = new Intent(this, HomeActivity.class);
 
         Thread timer = new Thread(){
             public void run () {
