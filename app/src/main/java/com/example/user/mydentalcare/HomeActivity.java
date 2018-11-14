@@ -96,8 +96,8 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
             //Intent intent = new Intent(this, ResultActivity.class);
             // startActivity(intent);
         } else if (id == R.id.nav_login) {
-            // Intent intent = new Intent(this, LoginActivity.class);
-            //startActivity(intent);
+             Intent intent = new Intent(this, LoginActivity.class);
+             startActivity(intent);
         } else if (id == R.id.nav_exit) {
 
         }
