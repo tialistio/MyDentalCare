@@ -21,6 +21,7 @@
         </activity>
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".EstimateScore"></activity>
+        <activity android:name=".EstimateScore2"/>
     </application>
 
 </manifest>
