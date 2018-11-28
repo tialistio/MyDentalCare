@@ -6,31 +6,31 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/home"
-            android:title="홈" />
+            android:title="Home" />
         <item
             android:id="@+id/nav_scooring"
             android:icon="@drawable/tooth"
-            android:title="진단" />
+            android:title="Estimate" />
         <item
             android:id="@+id/nav_source"
             android:icon="@drawable/record"
-            android:title="금강건강 정보" />
+            android:title="Dental Care Library" />
         <item
             android:id="@+id/nav_result"
             android:icon="@drawable/dental_care"
-            android:title="결과 보기" />
+            android:title="Check Result" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Program">
         <menu>
             <item
                 android:id="@+id/nav_login"
                 android:icon="@drawable/login"
-                android:title="로그인" />
+                android:title="Login" />
             <item
                 android:id="@+id/nav_exit"
                 android:icon="@drawable/power_button_outline"
-                android:title="종류" />
+                android:title="Close" />
         </menu>
     </item>
 </menu>

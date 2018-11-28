@@ -15,9 +15,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:layout_gravity="center"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:orientation="vertical">
 
         <ImageView
@@ -33,11 +33,11 @@
         android:layout_height="match_parent"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
-            android:paddingTop="10dp"
+            android:paddingTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -45,7 +45,7 @@
             android:textStyle="bold"
             />
         <TextView
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -54,11 +54,27 @@
             />
         <Button
             android:id="@+id/bt_gotoscoring"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="진단"
-            android:layout_marginTop="10dp"
+            android:text="Estimate My Dental Score"
+            android:layout_marginTop="5dp"
+            />
+        <Button
+            android:id="@+id/bt_gotohospitaldata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Hospital Data"
+            android:layout_marginTop="5dp"
+            />
+        <Button
+            android:id="@+id/bt_gotoabout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="About"
+            android:layout_marginTop="5dp"
             />
         <TextView
             android:id="@+id/tv_login"
