@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener{
@@ -27,14 +28,6 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -88,8 +81,8 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_scooring) {
-            //Intent intent = new Intent(this, Scoring_1.class);
-            // startActivity(intent);
+            Intent intent = new Intent(this, EstimateScore.class);
+            startActivity(intent);
         } else if (id == R.id.nav_source) {
 
         } else if (id == R.id.nav_result) {
@@ -105,5 +98,10 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void GotoScoring(View v){
+        Intent intent = new Intent(HomeActivity.this, EstimateScore.class);
+        startActivity(intent);
     }
 }

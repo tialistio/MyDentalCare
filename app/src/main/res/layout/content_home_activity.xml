@@ -59,6 +59,7 @@
             android:layout_gravity="center_horizontal"
             android:text="Estimate My Dental Score"
             android:layout_marginTop="5dp"
+            android:onClick="GotoScoring"
             />
         <Button
             android:id="@+id/bt_gotohospitaldata"
@@ -76,14 +77,15 @@
             android:text="About"
             android:layout_marginTop="5dp"
             />
-        <TextView
-            android:id="@+id/tv_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="로그인"
-            android:textColor="@color/colorPrimaryDark"
-            />
 
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom"
+        android:textSize="8dp"
+        android:text="Copyright @Sunmoon University"
+        android:textColor="@color/colorPrimaryDark"
+        />
 </LinearLayout>
