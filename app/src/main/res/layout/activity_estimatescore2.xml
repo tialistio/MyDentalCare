@@ -58,7 +58,7 @@
                 <TableRow
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:weightSum="2"
+                    android:weightSum="10"
                     android:paddingBottom="10dp"
                     >
 
@@ -66,13 +66,20 @@
                         android:text="Do your gums bleed when you brush your teeth?"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0"
+                        android:layout_weight="9"
                         android:paddingLeft="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_detail1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="\?"
+                        android:layout_gravity="center"
+                        android:onClick="ShowDetails"/>
                 </TableRow>
 
                 <TableRow
-                    android:id="@+id/tr2_1"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:weightSum="3"
                     android:paddingBottom="10dp"
@@ -85,31 +92,504 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/rg2_1_y"
-                            android:layout_width="0dp"
+                            android:id="@+id/rg2_1_1"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Yes" />
 
                         <RadioButton
-                            android:id="@+id/rg2_1_n"
-                            android:layout_width="0dp"
+                            android:id="@+id/rg2_1_2"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="no" />
+                            android:text="No" />
                     </RadioGroup>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:paddingBottom="10dp"
+                    >
+
                     <TextView
-                        android:id="@+id/tv_detail1"
-                        android:layout_width="0dp"
+                        android:text="Have you had 7 or more adult teeth extracted because of decay, looseness, or pain? (not counting wisdom or impacted teeth, or teeth knocked out by an accident or removed for orthodontics)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:paddingLeft="8dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/rg2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rg2_2_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="No" />
+                    </RadioGroup>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <TextView
+                        android:text="Have you ever had a gum treatment or gum surgery with an anesthetic injection, or have you made a reservation for treatment?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:paddingLeft="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_detail2"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="\?"
                         android:layout_gravity="center"
                         android:onClick="ShowDetails"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/rg2_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rg2_4_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_4_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="No" />
+                    </RadioGroup>
 
                 </TableRow>
                 <TableRow
-                    android:id="@+id/tr3"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_weight="9"
+                        android:paddingLeft="8dp"
+                        android:text="Do you frequently snack on sugary or starchy snacks or drink sugared beverages between meals?" />
+
+                    <TextView
+                        android:id="@+id/tv_detail3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:onClick="ShowDetails"
+                        android:text="\?" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:id="@+id/rg2_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rg2_5_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="I don't Eat" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_5_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Once" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_5_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text=" 2-3 times" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_5_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="More than 4 times" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_5_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="I Don't Know" />
+
+                    </RadioGroup>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_weight="9"
+                        android:paddingLeft="8dp"
+                        android:text="Have you been to a dental clinic for the purpose of treating or managing oral diseases for the past year?" />
+
+                    <TextView
+                        android:id="@+id/tv_detail4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:onClick="ShowDetails"
+                        android:text="\?" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:id="@+id/rg2_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rg2_6_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="have" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_6_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="don't have" />
+
+                    </RadioGroup>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_weight="9"
+                        android:paddingLeft="8dp"
+                        android:text="Do you smoke cigarettes?" />
+
+                    <TextView
+                        android:id="@+id/tv_detail5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:onClick="ShowDetails"
+                        android:text="\?" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:id="@+id/rg2_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rg2_7_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Never Used" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_7_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Yes, I Smoke cigarettes" />
+                        <RadioButton
+                            android:id="@+id/rg2_7_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Formely Used" />
+
+                    </RadioGroup>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_weight="9"
+                        android:paddingLeft="8dp"
+                        android:text="Are you currently suffering from diabetes or cardiovascular disease (including high blood pressure, hyperlipidemia)?" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:id="@+id/rg2_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rg2_8_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="have" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_8_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="don't have" />
+
+                    </RadioGroup>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_weight="9"
+                        android:paddingLeft="8dp"
+                        android:text="During the last week, how often did you brush your teeth just before you went to bed?" />
+
+                    <TextView
+                        android:id="@+id/tv_detail6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:onClick="ShowDetails"
+                        android:text="\?" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:id="@+id/rg2_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rg2_9_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Always (7 Times)" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_9_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Often (4-6 times)" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_9_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Occasionally (1-3 times)" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_9_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Never" />
+                    </RadioGroup>
+
+                </TableRow>
+                <TableRow
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="9"
+                    android:paddingLeft="8dp"
+                    android:text="Do you use floss to wipe between teeth?" />
+                <TextView
+                    android:id="@+id/tv_detail7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:onClick="ShowDetails"
+                    android:text="\?" />
+
+            </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:id="@+id/rg2_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rg2_10_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_10_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="No" />
+
+                    </RadioGroup>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_weight="9"
+                        android:paddingLeft="8dp"
+                        android:text="Do you currently have periodontal disease?" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:id="@+id/rg2_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rg2_11_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/rg2_11_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="No" />
+
+                    </RadioGroup>
+
+                </TableRow>
+
+                <TableRow
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:weightSum="2"

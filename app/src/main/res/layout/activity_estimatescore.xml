@@ -10,88 +10,738 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/colorPrimary">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
 
-    </android.support.design.widget.AppBarLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:layout_margin="@dimen/activity_horizontal_margin"
-                android:text="About My Teeth"/>
-
-            <TableLayout
-                android:id="@+id/tableLayout1"
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent ="true"
-                android:layout_marginTop="23dp"
-                android:stretchColumns="*"
-                >
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-                <TableRow
-                    android:id="@+id/tr1"
-                    android:layout_width="match_parent"
-                    android:weightSum="2"
-                    android:paddingBottom="10dp">
+        </android.support.design.widget.AppBarLayout>
 
-                    <TextView
-                        android:text="How Old Are You ?"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="8dp"
-                        android:layout_column="0"
-                        android:layout_weight="1"
-                        />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                    <Spinner
-                        android:id="@+id/spiner_age"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_weight="1">
-
-                    </Spinner>
-                </TableRow>
-            </TableLayout>
-            <Button
-                android:id="@+id/bt_estimate_next"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Next"
-                />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:text="About My Teeth"
+                    android:textSize="20dp" />
 
-    </ScrollView>
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="23dp"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:id="@+id/tr1"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="1"
+                            android:paddingLeft="8dp"
+                            android:text="How Old Are You ?" />
+
+                        <Spinner
+                            android:id="@+id/spiner_age"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_weight="1">
+
+                        </Spinner>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr2"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="9"
+                            android:paddingLeft="8dp"
+                            android:text="What Is Your Academic Background ?" />
+
+                        <TextView
+                            android:id="@+id/tv_detail1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:onClick="ShowDetail"
+                            android:text="\?" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="3">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rg1_1_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=" less than Elementary School graduate" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_1_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="more than Junior School Graduate " />
+
+                            <RadioButton
+                                android:id="@+id/rg1_1_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="more than Junior School Graduate " />
+                        </RadioGroup>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_2"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="9"
+                            android:paddingLeft="8dp"
+                            android:text="Are any of your teeth filled or crowned (capped)" />
+
+                        <TextView
+                            android:id="@+id/tv_detail2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:onClick="ShowDetail"
+                            android:text="\?" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rg1_2_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="yes" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_2_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="no" />
+
+                        </RadioGroup>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_4"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="9"
+                            android:paddingLeft="8dp"
+                            android:text="Have you had any adult teeth extracted because of decay, gum disease, or pain? (not counting wisdom teeth or teeth removed for braces)" />
+
+                        <TextView
+                            android:id="@+id/tv_detail3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:onClick="ShowDetail"
+                            android:text="\?" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rg1_3_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="yes" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_3_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="no" />
+
+                        </RadioGroup>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_6"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="9"
+                            android:paddingLeft="8dp"
+                            android:text="Have you had any pain from chewing, aching, or sensitivity to hot or cold in your mouth during the past year?" />
+
+                        <TextView
+                            android:id="@+id/tv_detail4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:onClick="ShowDetail"
+                            android:text="\?" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rg1_4_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="have" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_4_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="don't have" />
+
+                        </RadioGroup>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_8"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="9"
+                            android:paddingLeft="8dp"
+                            android:text="Do you frequently snack on sugary or starchy snacks or drink sugared beverages between meals?" />
+
+                        <TextView
+                            android:id="@+id/tv_detail5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:onClick="ShowDetail"
+                            android:text="\?" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rg1_5_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="I don't Eat" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_5_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Once" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_5_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text=" 2-3 times" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_5_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="More than 4 times" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_5_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="I Don't Know" />
+
+                        </RadioGroup>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_10"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="9"
+                            android:paddingLeft="8dp"
+                            android:text="Have you been to a dental clinic for the purpose of treating or managing oral diseases for the past year?" />
+
+                        <TextView
+                            android:id="@+id/tv_detail6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:onClick="ShowDetail"
+                            android:text="\?" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr1_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rg1_6_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="have" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_6_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="don't have" />
+
+                        </RadioGroup>
+
+                    </TableRow>
+                    <TableRow
+                    android:id="@+id/tr1_12"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_weight="9"
+                        android:paddingLeft="8dp"
+                        android:text="Does your mouth frequently feel dry?" />
+
+                    <TextView
+                        android:id="@+id/tv_detail7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:onClick="ShowDetail"
+                        android:text="\?" />
+
+                </TableRow>
+                    <TableRow
+                        android:id="@+id/tr1_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rg1_7_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="yes" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_7_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="no" />
+
+                        </RadioGroup>
+
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tr1_14"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="9"
+                            android:paddingLeft="8dp"
+                            android:text="Have you had a major health change (like diabetes, a heart attack, stroke, diagnosis of disease such as cancer, Parkinson's, etc.) during the past 12 months?" />
+
+                        <TextView
+                            android:id="@+id/tv_detail8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:onClick="ShowDetail"
+                            android:text="\?" />
+
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tr1_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rg1_8_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="yes" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_8_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="no" />
+
+                        </RadioGroup>
+
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tr1_16"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="9"
+                            android:paddingLeft="8dp"
+                            android:text="During the last week, how often did you brush your teeth just before you went to bed?" />
+
+                        <TextView
+                            android:id="@+id/tv_detail9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:onClick="ShowDetail"
+                            android:text="\?" />
+
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tr1_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rg1_9_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Always (7 Times)" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_9_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Often (4-6 times)" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_9_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Occasionally (1-3 times)" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_9_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Never" />
+                        </RadioGroup>
+
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tr1_18"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="9"
+                            android:paddingLeft="8dp"
+                            android:text="Do you currently have fluoride in your toothpaste?" />
+
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tr1_19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rg1_10_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="yes" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_10_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="no" />
+
+                        </RadioGroup>
+
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tr1_20"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_weight="9"
+                            android:paddingLeft="8dp"
+                            android:text="When you think for yourself, what do you think is your oral health?" />
+
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tr1_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <RadioGroup
+                            android:id="@+id/rg1_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rg1_11_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Very Good" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_11_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Good" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_11_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Normal" />
+
+                            <RadioButton
+                                android:id="@+id/rg1_11_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Bad" />
+                            <RadioButton
+                                android:id="@+id/rg1_11_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Very Bad" />
+                        </RadioGroup>
+
+                    </TableRow>
 
 
-</LinearLayout>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/bt_estimate_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Next" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
 
 </RelativeLayout>

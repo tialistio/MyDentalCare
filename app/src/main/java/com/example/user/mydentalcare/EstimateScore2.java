@@ -75,6 +75,36 @@ public class EstimateScore2 extends AppCompatActivity {
                 alertDialog = builder1.create();
                 alertDialog.show();
                 break;
+            case R.id.tv_detail2:
+                builder1.setMessage("When periodontal (gum) disease progresses past the early, easily treated stage, surgery is often necessary to correct problems related to loss of the supporting bone and gum tissues.");
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
+            case R.id.tv_detail3:
+                builder1.setMessage("Sugary or starchy snacks and beverages include candy, cookies, baked goods, chips, cereals, crackers, bread, soda, energy or sport drinks, fruit juices, or chewing gum containing sugar.");
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
+            case R.id.tv_detail4:
+                builder1.setMessage("Routine dental check-ups are the best way to detect oral health problems before they become serious. The frequency of visits depends on your level of risk for various oral health conditions. Once a year is usually adequate for those at low risk of oral diseases but check with your dentist for what is best for you.");
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
+            case R.id.tv_detail5:
+                builder1.setMessage("There are a number of risk factors for gum disease, but smoking is one of the most significant. In fact, smoking can even lower the chances of successful treatment. The severity of gum disease and how well it responds to treatment is related to other key disease modifying factors including diabetes and genetics.");
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
+            case R.id.tv_detail6:
+                builder1.setMessage("Normal saliva production is critical to protect your teeth from the risk of tooth decay. Dry mouth can happen to anyone occasionally, such as when you're nervous or dehydrated. If the condition persists, there are a number of potential causes. Illnesses such as diabetes, Parkinson's disease and Sjogren's syndrome can affect the salivary glands. Cancer treatments, particularly radiation to the head and neck and many types of chemotherapy can damage the salivary glands and cause dry mouth. Over 400 medications interfere with the body's natural ability to produce saliva. These include medications for such common conditions as high blood pressure, diabetes, asthma, allergies, anxiety and depression, among others. Depending on the cause of your dry mouth, your health care provider can recommend appropriate treatment.");
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
+            case R.id.tv_detail7:
+                builder1.setMessage("There are a number of risk factors for gum disease, but smoking is one of the most significant. In fact, smoking can even lower the chances of successful treatment. The severity of gum disease and how well it responds to treatment is related to other key disease modifying factors including diabetes and genetics.");
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
 
         }
     }

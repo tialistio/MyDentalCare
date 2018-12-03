@@ -82,31 +82,46 @@ public class EstimateScore extends AppCompatActivity implements AdapterView.OnIt
                 alertDialog = builder1.create();
                 alertDialog.show();
                 break;
-           /* case R.id.tv_detail2:
+            case R.id.tv_detail2:
                 builder1.setMessage("A past history of fillings or crowns (caps) is often the best predictor for future needs. No dental restoration is permanent. The life expectancy of a filling or crown depends on many factors including diet, oral hygiene practices, and oral habits like bruxing, grinding, ice chewing or other possibly destructive oral habits.");
                 alertDialog = builder1.create();
                 alertDialog.show();
                 break;
             case R.id.tv_detail3:
-                builder1.setMessage("Tooth decay results from a bacterial infection. Recent fillings often mean that you have had active infection in your mouth and are likely at higher risk for new decay. You should receive an accurate diagnosis of your problems and appropriate preventive care from your dentist.");
+                builder1.setMessage("Missing teeth due to disease are often an indicator for higher future disease risk.");
                 alertDialog = builder1.create();
                 alertDialog.show();
                 break;
             case R.id.tv_detail4:
-                builder1.setMessage("Missing teeth due to disease are often an indicator for higher future disease risk.");
+                builder1.setMessage("Tooth pain when exposed to hot or cold or when chewing may be a sign of tooth decay.");
                 alertDialog = builder1.create();
                 alertDialog.show();
                 break;
-            case R.id.tv_detail5:
-                builder1.setMessage("Missing teeth due to disease are often an indicator for higher future disease risk.");
+           case R.id.tv_detail5:
+                builder1.setMessage("Sugary or starchy snacks and beverages include candy, cookies, baked goods, chips, cereals, crackers, bread, soda, energy or sport drinks, fruit juices, or chewing gum containing sugar.");
                 alertDialog = builder1.create();
                 alertDialog.show();
                 break;
             case R.id.tv_detail6:
-                builder1.setMessage("Missing teeth may affect not only your appearance but also your ability to chew your food effectively and the stability of the rest of your teeth. Not all missing teeth need to be replaced, but consult with your dentist for the proper treatment plan to deal with missing teeth.");
+                builder1.setMessage("Routine dental check-ups are the best way to detect oral health problems before they become serious. The frequency of visits depends on your level of risk for various oral health conditions. Once a year is usually adequate for those at low risk of oral diseases but check with your dentist for what is best for you.");
                 alertDialog = builder1.create();
                 alertDialog.show();
-                break;*/
+                break;
+            case R.id.tv_detail7:
+                builder1.setMessage("Normal saliva production is critical to protect your teeth from the risk of tooth decay. Dry mouth can happen to anyone occasionally, such as when you're nervous or dehydrated. If the condition persists, there are a number of potential causes. Illnesses such as diabetes, Parkinson's disease and Sjogren's syndrome can affect the salivary glands. Cancer treatments, particularly radiation to the head and neck and many types of chemotherapy can damage the salivary glands and cause dry mouth. Over 400 medications interfere with the body's natural ability to produce saliva. These include medications for such common conditions as high blood pressure, diabetes, asthma, allergies, anxiety and depression, among others. Depending on the cause of your dry mouth, your health care provider can recommend appropriate treatment.");
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
+            case R.id.tv_detail8:
+                builder1.setMessage("People that undergo major health changes often neglect their oral health while undergoing life-saving or life-changing therapy for their disease. They may also begin taking medications that cause dry mouth. Your risk for tooth decay can increase dramatically after these life-changing events. Check with your dentist for guidance.");
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
+            case R.id.tv_detail9:
+                builder1.setMessage("When you are asleep, you are swallowing much less than when you are awake. This means that your body does not need to produce nearly as much saliva as it does when you are awake. If there is sugar for the bacteria in your mouth to feed off of during this time, the risk of the acids eating away at your enamel is much greater. When you brush your teeth before going to bed, you minimize this risk quite a bit.");
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
         }
 
     }
