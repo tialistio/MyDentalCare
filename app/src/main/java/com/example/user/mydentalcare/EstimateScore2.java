@@ -9,8 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
+import android.widget.RadioGroup;
 
 public class EstimateScore2 extends AppCompatActivity {
+
 
     public static int totalscore2 = 0;
     public static int radioButtonID = 0;
@@ -28,6 +31,17 @@ public class EstimateScore2 extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        Button next = (Button)findViewById(R.id.bt_estimate2_next);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gettotalscore();
+                Intent intent = new Intent(EstimateScore2.this, Result.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     @Override
@@ -43,7 +57,7 @@ public class EstimateScore2 extends AppCompatActivity {
         return true;
     }
 
-    public void ShowDetail(View v){
+    public void ShowDetails(View v){
         AlertDialog.Builder builder1 = new AlertDialog.Builder(EstimateScore2.this);
         builder1.setCancelable(true);
         AlertDialog alertDialog;
@@ -73,5 +87,19 @@ public class EstimateScore2 extends AppCompatActivity {
                 break;
 
         }
+    }
+
+    public void gettotalscore(){
+        RadioGroup rg2_1 = (RadioGroup)findViewById(R.id.rg2_1);
+        radioButtonID = rg2_1.getCheckedRadioButtonId();
+        radioButton = rg2_1.findViewById(radioButtonID);
+        selectedId = rg2_1.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sum_score(selectedId);
+
+    }
+
+    public void sum_score(int score){
+        totalscore2 = totalscore2 + score;
     }
 }
