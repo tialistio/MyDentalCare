@@ -12,9 +12,13 @@
             android:icon="@drawable/tooth"
             android:title="Estimate" />
         <item
-            android:id="@+id/nav_source"
+            android:id="@+id/nav_hospital"
             android:icon="@drawable/record"
-            android:title="Dental Care Library" />
+            android:title="Hospital Data" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/dental_care"
+            android:title="About" />
         <item
             android:id="@+id/nav_result"
             android:icon="@drawable/dental_care"

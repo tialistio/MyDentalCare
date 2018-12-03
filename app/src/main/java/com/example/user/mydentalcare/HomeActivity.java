@@ -83,11 +83,15 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
         } else if (id == R.id.nav_scooring) {
             Intent intent = new Intent(this, EstimateScore.class);
             startActivity(intent);
-        } else if (id == R.id.nav_source) {
-
+        } else if (id == R.id.nav_hospital) {
+            Intent intent = new Intent(this, HospitalData.class);
+            startActivity(intent);
         } else if (id == R.id.nav_result) {
-            //Intent intent = new Intent(this, ResultActivity.class);
-            // startActivity(intent);
+            Intent intent = new Intent(this, Result.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_about) {
+            Intent intent = new Intent(this, About.class);
+            startActivity(intent);
         } else if (id == R.id.nav_login) {
              Intent intent = new Intent(this, LoginActivity.class);
              startActivity(intent);
@@ -102,6 +106,16 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
 
     public void GotoScoring(View v){
         Intent intent = new Intent(HomeActivity.this, EstimateScore.class);
+        startActivity(intent);
+    }
+
+    public void GotoHospitalData(View v){
+        Intent intent = new Intent(HomeActivity.this, HospitalData.class);
+        startActivity(intent);
+    }
+
+    public void GotoAbout(View v){
+        Intent intent = new Intent(HomeActivity.this, About.class);
         startActivity(intent);
     }
 }

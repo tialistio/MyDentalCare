@@ -68,6 +68,7 @@
             android:layout_gravity="center_horizontal"
             android:text="Hospital Data"
             android:layout_marginTop="5dp"
+            android:onClick="GotoHospitalData"
             />
         <Button
             android:id="@+id/bt_gotoabout"
@@ -76,6 +77,7 @@
             android:layout_gravity="center_horizontal"
             android:text="About"
             android:layout_marginTop="5dp"
+            android:onClick="GotoAbout"
             />
 
     </LinearLayout>
