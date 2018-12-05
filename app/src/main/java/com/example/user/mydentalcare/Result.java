@@ -5,13 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import static com.example.user.mydentalcare.EstimateScore2.totalscore2;
 
 public class Result extends AppCompatActivity {
 
-    TextView score;
+    ImageView disease_risk_iv;
+    ImageView disease_score_iv;
+    TextView disease_risk_tv;
+    TextView disease_score_tv;
+    String score_img = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +31,19 @@ public class Result extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         //-----------------------------------------------
 
-        score = (TextView)findViewById(R.id.tv_result_score);
-        score.setText("Score : " + String.valueOf(totalscore2));
+        disease_risk_iv = (ImageView)findViewById(R.id.iv_disease_risk);
+        disease_risk_tv = (TextView)findViewById(R.id.tv_disease_risk);
+        disease_score_iv = (ImageView)findViewById(R.id.iv_disease_score);
+        disease_score_tv = (TextView)findViewById(R.id.tv_disease_score);
+
+        if(totalscore2<10){
+            score_img = "report_1";
+        }
+
+        disease_risk_iv.setImageResource(R.drawable.report_1);
+        disease_risk_tv.setText(R.string.low_risk);
+        disease_score_iv.setImageResource(R.drawable.report_1);
+        disease_score_tv.setText(R.string.healty_gum);
 
     }
 

@@ -16,4 +16,9 @@
 Once you have Estimated Dental Scores, you can discuss the results with your dentist who can verify those scores with information collected during a professional dental examination. </string>
     <string name="title_activity_login">Sign in</string>
 
+    <string name="risk_score">Your Risk Score describes the chance your health will get worse without good home and professional care.</string>
+    <string name="disease_score">Your Disease Score describes how much care is needed to get you as healthy as you can be or to prevent another episode of disease.</string>
+
+    <string name="low_risk">Your estimated gum disease risk is indicating low risk</string>
+    <string name="healty_gum">Your estimated gum disease score is indicating healty gums</string>
 </resources>

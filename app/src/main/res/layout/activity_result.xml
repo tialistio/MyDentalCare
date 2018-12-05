@@ -8,6 +8,7 @@
     tools:context=".Result"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/colorPrimary">
 
@@ -29,11 +30,84 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         </android.support.design.widget.AppBarLayout>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:text="The following is a report summary"/>
 
         <TextView
-            android:id="@+id/tv_result_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:textStyle="italic"
+        android:text="What does the Risk Score mean"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/risk_score"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:textStyle="italic"
+            android:text="What does the Disease Score mean"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/disease_score"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/tv_disease_risk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:paddingTop="10dp"
+            android:id="@+id/iv_disease_risk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/tv_disease_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:paddingTop="10dp"
+            android:id="@+id/iv_disease_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+</ScrollView>
     </LinearLayout>
 
 </RelativeLayout>
