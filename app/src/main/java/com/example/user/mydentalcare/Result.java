@@ -1,10 +1,13 @@
 package com.example.user.mydentalcare;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -59,5 +62,31 @@ public class Result extends AppCompatActivity {
         Intent intent = new Intent(Result.this, HomeActivity.class);
         startActivity(intent);
         return true;
+    }
+
+    public void showdetailss(View v){
+        AlertDialog.Builder builder1 = new AlertDialog.Builder(Result.this);
+        builder1.setCancelable(true);
+        AlertDialog alertDialog;
+
+        builder1.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+
+        switch (v.getId()){
+            case R.id.ib_detail1:
+                builder1.setMessage(R.string.disease_risk_detail);
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
+            case R.id.ib_detail2:
+                builder1.setMessage(R.string.disease_score_detail);
+                alertDialog = builder1.create();
+                alertDialog.show();
+                break;
+        }
     }
 }

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Result"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorPrimary"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorPrimary">
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Result">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,84 +29,161 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         </android.support.design.widget.AppBarLayout>
-<ScrollView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/tv_result"
-            android:layout_width="wrap_content"
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Summary"
-            android:textSize="30sp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:paddingTop="10dp"
-            android:text="The following is a report summary"/>
+            android:layout_centerInParent="true"
+            android:layout_marginTop="23dp"
+            android:stretchColumns="*">
 
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:paddingTop="10dp"
-        android:textStyle="italic"
-        android:text="What does the Risk Score mean"/>
+            <TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="@string/risk_score"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:paddingTop="10dp"
-            android:textStyle="italic"
-            android:text="What does the Disease Score mean"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="@string/disease_score"/>
-
-        <TextView
-            android:paddingTop="10dp"
-            android:id="@+id/tv_disease_risk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summary"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="The following is a report summary"
+                android:textSize="20sp" />
+            </TableRow>
 
 
-        <ImageView
-            android:paddingTop="10dp"
-            android:id="@+id/iv_disease_risk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp">
 
-        <TextView
-            android:paddingTop="10dp"
-            android:id="@+id/tv_disease_score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="What does the Risk Score mean"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
 
+            </TableRow>
 
-        <ImageView
-            android:paddingTop="10dp"
-            android:id="@+id/iv_disease_score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="@string/risk_score" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="What does the Disease Score mean"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="@string/disease_score" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tv_disease_risk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/iv_disease_risk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:paddingTop="10dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_detail1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:onClick="showdetailss"
+                    android:src="@drawable/question">
+
+                </ImageButton>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tv_disease_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/iv_disease_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:paddingTop="10dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_detail2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:onClick="showdetailss"
+                    android:src="@drawable/question">
+
+                </ImageButton>
+            </TableRow>
+
+        </TableLayout>
+        </ScrollView>
     </LinearLayout>
-</ScrollView>
-    </LinearLayout>
-
-</RelativeLayout>
+    </RelativeLayout>

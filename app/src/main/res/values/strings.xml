@@ -21,4 +21,16 @@ Once you have Estimated Dental Scores, you can discuss the results with your den
 
     <string name="low_risk">Your estimated gum disease risk is indicating low risk</string>
     <string name="healty_gum">Your estimated gum disease score is indicating healty gums</string>
+    <string name="disease_risk_detail">Scores will change depending on:
+\n > Your age
+\n >Whether you are diabetic
+\n >Whether you smoke cigarettes
+\n Reporting any of these will increase your risk score.</string>
+    <string name="disease_score_detail">Scores will change depending on:
+\n > If 7 or more of your teeth have been extracted
+\n > If you have any loose teeth
+\n > If you have had gum surgery
+\n > If your dentist has told you that you have loss of bone that support your teeth
+\n > If you have had deep cleaning under the gum line (also called scaling and root planing)
+\n > If your gums bleed when you brush</string>
 </resources>
