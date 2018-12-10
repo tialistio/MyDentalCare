@@ -12,8 +12,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.Spinner;
+
+import static com.example.user.mydentalcare.EstimateScore2.totalscore2;
 
 public class EstimateScore extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -22,6 +25,11 @@ public class EstimateScore extends AppCompatActivity implements AdapterView.OnIt
     public static int totalscore = 0;
     private Spinner spinnerage;
     private static final String[] paths = {"20-29","30-39","40-49","50-59","60-69",">70"};
+    public static int totalscore2 = 0;
+    public static int radioButtonID = 0;
+    public static int selectedId = 0;
+    public static String selected ="";
+    View radioButton ;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,6 +54,7 @@ public class EstimateScore extends AppCompatActivity implements AdapterView.OnIt
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                gettotalscore2();
                 Intent intent = new Intent(EstimateScore.this, EstimateScore2.class);
                 startActivity(intent);
             }
@@ -148,4 +157,86 @@ public class EstimateScore extends AppCompatActivity implements AdapterView.OnIt
     public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
+
+    public void gettotalscore2(){
+        RadioGroup rg1_1 = (RadioGroup)findViewById(R.id.rg1_1);
+        radioButtonID = rg1_1.getCheckedRadioButtonId();
+        radioButton = rg1_1.findViewById(radioButtonID);
+        selectedId = rg1_1.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+        RadioGroup rg1_2 = (RadioGroup)findViewById(R.id.rg1_2);
+        radioButtonID = rg1_2.getCheckedRadioButtonId();
+        radioButton = rg1_2.findViewById(radioButtonID);
+        selectedId = rg1_2.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+        RadioGroup rg1_3 = (RadioGroup)findViewById(R.id.rg1_3);
+        radioButtonID = rg1_3.getCheckedRadioButtonId();
+        radioButton = rg1_3.findViewById(radioButtonID);
+        selectedId = rg1_3.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+        RadioGroup rg1_4 = (RadioGroup)findViewById(R.id.rg1_4);
+        radioButtonID = rg1_4.getCheckedRadioButtonId();
+        radioButton = rg1_4.findViewById(radioButtonID);
+        selectedId = rg1_4.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+        RadioGroup rg1_5 = (RadioGroup)findViewById(R.id.rg1_5);
+        radioButtonID = rg1_5.getCheckedRadioButtonId();
+        radioButton = rg1_5.findViewById(radioButtonID);
+        selectedId = rg1_5.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+        RadioGroup rg1_6 = (RadioGroup)findViewById(R.id.rg1_6);
+        radioButtonID = rg1_6.getCheckedRadioButtonId();
+        radioButton = rg1_6.findViewById(radioButtonID);
+        selectedId = rg1_6.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+        RadioGroup rg1_7 = (RadioGroup)findViewById(R.id.rg1_7);
+        radioButtonID = rg1_7.getCheckedRadioButtonId();
+        radioButton = rg1_7.findViewById(radioButtonID);
+        selectedId = rg1_7.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+        RadioGroup rg1_8 = (RadioGroup)findViewById(R.id.rg1_8);
+        radioButtonID = rg1_8.getCheckedRadioButtonId();
+        radioButton = rg1_8.findViewById(radioButtonID);
+        selectedId = rg1_8.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+        RadioGroup rg1_9 = (RadioGroup)findViewById(R.id.rg1_9);
+        radioButtonID = rg1_9.getCheckedRadioButtonId();
+        radioButton = rg1_9.findViewById(radioButtonID);
+        selectedId = rg1_9.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+        RadioGroup rg1_10 = (RadioGroup)findViewById(R.id.rg1_10);
+        radioButtonID = rg1_10.getCheckedRadioButtonId();
+        radioButton = rg1_10.findViewById(radioButtonID);
+        selectedId = rg1_10.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+        RadioGroup rg1_11 = (RadioGroup)findViewById(R.id.rg1_11);
+        radioButtonID = rg1_11.getCheckedRadioButtonId();
+        radioButton = rg1_11.findViewById(radioButtonID);
+        selectedId = rg1_11.indexOfChild(radioButton);
+        selected = String.valueOf(selectedId);
+        sumscore(selectedId);
+
+    }
+
+    public void sumscore(int score){ totalscore2 =  totalscore2 + score; }
 }
