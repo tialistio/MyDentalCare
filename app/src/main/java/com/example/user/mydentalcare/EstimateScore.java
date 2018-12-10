@@ -12,10 +12,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 
 public class EstimateScore extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
+    public static ScrollView scrollView1;
     Button next;
     public static int totalscore = 0;
     private Spinner spinnerage;
@@ -25,6 +27,7 @@ public class EstimateScore extends AppCompatActivity implements AdapterView.OnIt
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_estimatescore);
+        scrollView1 = (ScrollView)findViewById(R.id.scroll1);
 
         //Set the Age Spinner
         spinnerage = (Spinner)findViewById(R.id.spiner_age);

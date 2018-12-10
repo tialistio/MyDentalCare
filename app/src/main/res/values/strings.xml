@@ -33,4 +33,7 @@ Once you have Estimated Dental Scores, you can discuss the results with your den
 \n > If your dentist has told you that you have loss of bone that support your teeth
 \n > If you have had deep cleaning under the gum line (also called scaling and root planing)
 \n > If your gums bleed when you brush</string>
+
+    <string name="sharing_text">Your sharing text goes here…</string>
+    <string name="share_title">Share Screenshot</string>
 </resources>
