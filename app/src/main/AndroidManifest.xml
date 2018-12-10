@@ -28,7 +28,6 @@
         <activity android:name=".Result" />
         <activity android:name=".About" />
         <activity android:name=".HospitalData" />
-        <activity android:name=".SendEmail"></activity>
     </application>
 
 </manifest>

@@ -63,7 +63,7 @@
                     >
 
                     <TextView
-                        android:text="Do your gums bleed when you brush your teeth?"
+                        android:text="Do your gums bleed when you brush your teeth?/ 평소 칫솔질 할 때 잇몸에서 피가 난 적이 있습니까?"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="9"
@@ -96,14 +96,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Yes" />
+                            android:text="Yes/예" />
 
                         <RadioButton
                             android:id="@+id/rg2_1_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="No" />
+                            android:text="No/아니요" />
                     </RadioGroup>
 
                 </TableRow>
@@ -115,7 +115,7 @@
                     >
 
                     <TextView
-                        android:text="Have you had 7 or more adult teeth extracted because of decay, looseness, or pain? (not counting wisdom or impacted teeth, or teeth knocked out by an accident or removed for orthodontics)"
+                        android:text="Have you had 7 or more adult teeth extracted because of decay, looseness, or pain? (not counting wisdom or impacted teeth, or teeth knocked out by an accident or removed for orthodontics)/충치, 잇몸병 또는 치통 때문에 영구치를 7개 이상 발치한 경험이 있습니까?(사랑니 또는 교정치료를 위한 발치 제외) "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="9"
@@ -139,14 +139,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Yes" />
+                            android:text="Yes/예" />
 
                         <RadioButton
                             android:id="@+id/rg2_2_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="No" />
+                            android:text="No/아니요" />
                     </RadioGroup>
 
                 </TableRow>
@@ -158,7 +158,7 @@
                     >
 
                     <TextView
-                        android:text="Have you ever had a gum treatment or gum surgery with an anesthetic injection, or have you made a reservation for treatment?"
+                        android:text="Have you ever had a gum treatment or gum surgery with an anesthetic injection, or have you made a reservation for treatment?/마취주사를 맞고 잇몸치료 또는 잇몸 수술을 받아보신 적이 있거나, 치료를 받기 위해 예약한 적이 있습니까?"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="9"
@@ -190,14 +190,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Yes" />
+                            android:text="Yes/예" />
 
                         <RadioButton
                             android:id="@+id/rg2_4_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="No" />
+                            android:text="No/아니요" />
                     </RadioGroup>
 
                 </TableRow>
@@ -212,7 +212,7 @@
                         android:layout_column="0"
                         android:layout_weight="9"
                         android:paddingLeft="8dp"
-                        android:text="Do you frequently snack on sugary or starchy snacks or drink sugared beverages between meals?" />
+                        android:text="Do you frequently snack on sugary or starchy snacks or drink sugared beverages between meals?/하루에 설탕이 든 과자, 설탕커피(믹스커피), 탄산음료를 얼마나 자주 먹습니까? " />
 
                     <TextView
                         android:id="@+id/tv_detail3"
@@ -242,35 +242,35 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="I don't Eat" />
+                            android:text="I don't Eat/먹지 않음" />
 
                         <RadioButton
                             android:id="@+id/rg2_5_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Once" />
+                            android:text="Once/1번 " />
 
                         <RadioButton
                             android:id="@+id/rg2_5_3"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text=" 2-3 times" />
+                            android:text=" 2-3 times/2~3번" />
 
                         <RadioButton
                             android:id="@+id/rg2_5_4"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="More than 4 times" />
+                            android:text="More than 4 times/4번 이상" />
 
                         <RadioButton
                             android:id="@+id/rg2_5_5"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="I Don't Know" />
+                            android:text="I Don't Know/모르겠다." />
 
                     </RadioGroup>
 
@@ -286,7 +286,7 @@
                         android:layout_column="0"
                         android:layout_weight="9"
                         android:paddingLeft="8dp"
-                        android:text="Have you been to a dental clinic for the purpose of treating or managing oral diseases for the past year?" />
+                        android:text="Have you been to a dental clinic for the purpose of treating or managing oral diseases for the past year?/최근 1년간 구강질환 치료나 관리를 목적으로 치과병(의)원에 가신 적이 있습니까?" />
 
                     <TextView
                         android:id="@+id/tv_detail4"
@@ -316,14 +316,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="have" />
+                            android:text="have/있다" />
 
                         <RadioButton
                             android:id="@+id/rg2_6_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="don't have" />
+                            android:text="don't have/없다" />
 
                     </RadioGroup>
 
@@ -339,7 +339,7 @@
                         android:layout_column="0"
                         android:layout_weight="9"
                         android:paddingLeft="8dp"
-                        android:text="Do you smoke cigarettes?" />
+                        android:text="Do you smoke cigarettes?/지금까지 살아오는 동안 담배를 피운 경험이 있습니까?" />
 
                     <TextView
                         android:id="@+id/tv_detail5"
@@ -368,20 +368,20 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Never Used" />
+                            android:text="Never Used/전혀 피운 적이 없다" />
 
                         <RadioButton
                             android:id="@+id/rg2_7_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Yes, I Smoke cigarettes" />
+                            android:text="Yes, I Smoke cigarettes/현재 피우고 있다" />
                         <RadioButton
                             android:id="@+id/rg2_7_3"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Formely Used" />
+                            android:text="Formely Used/이전에 피웠으나 끊었다" />
 
                     </RadioGroup>
 
@@ -397,7 +397,7 @@
                         android:layout_column="0"
                         android:layout_weight="9"
                         android:paddingLeft="8dp"
-                        android:text="Are you currently suffering from diabetes or cardiovascular disease (including high blood pressure, hyperlipidemia)?" />
+                        android:text="Are you currently suffering from diabetes or cardiovascular disease (including high blood pressure, hyperlipidemia)?/현재 당뇨병 또는 심혈관계 질환(고혈압, 고지혈증 포함)을 앓고 계십니까?" />
 
                 </TableRow>
                 <TableRow
@@ -417,14 +417,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="have" />
+                            android:text="have/있다" />
 
                         <RadioButton
                             android:id="@+id/rg2_8_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="don't have" />
+                            android:text="don't have/없다" />
 
                     </RadioGroup>
 
@@ -440,7 +440,7 @@
                         android:layout_column="0"
                         android:layout_weight="9"
                         android:paddingLeft="8dp"
-                        android:text="During the last week, how often did you brush your teeth just before you went to bed?" />
+                        android:text="During the last week, how often did you brush your teeth just before you went to bed?최근 일주일 동안, 잠자기 직전에 칫솔질을 얼마나 자주 하였습니까?" />
 
                     <TextView
                         android:id="@+id/tv_detail6"
@@ -469,28 +469,28 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Always (7 Times)" />
+                            android:text="Always (7 Times)/항상 했다(7회)" />
 
                         <RadioButton
                             android:id="@+id/rg2_9_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Often (4-6 times)" />
+                            android:text="Often (4-6 times)/대부분 했다(4∼6회)" />
 
                         <RadioButton
                             android:id="@+id/rg2_9_3"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Occasionally (1-3 times)" />
+                            android:text="Occasionally (1-3 times)/가끔 했다(1∼3회)" />
 
                         <RadioButton
                             android:id="@+id/rg2_9_4"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Never" />
+                            android:text="Never/전혀 하지 않았다(0회)" />
                     </RadioGroup>
 
                 </TableRow>
@@ -505,7 +505,7 @@
                     android:layout_column="0"
                     android:layout_weight="9"
                     android:paddingLeft="8dp"
-                    android:text="Do you use floss to wipe between teeth?" />
+                    android:text="Do you use floss to wipe between teeth?/치아 사이를 닦기 위해 치실을 사용하십니까?" />
                 <TextView
                     android:id="@+id/tv_detail7"
                     android:layout_width="0dp"
@@ -533,14 +533,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Yes" />
+                            android:text="Yes/예" />
 
                         <RadioButton
                             android:id="@+id/rg2_10_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="No" />
+                            android:text="No/아니요" />
 
                     </RadioGroup>
 
@@ -556,7 +556,7 @@
                         android:layout_column="0"
                         android:layout_weight="9"
                         android:paddingLeft="8dp"
-                        android:text="Do you currently have periodontal disease?" />
+                        android:text="Do you currently have periodontal disease?/현재 치주질환을 가지고 있다고 생각하십니까?" />
 
                 </TableRow>
                 <TableRow
@@ -576,14 +576,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Yes" />
+                            android:text="Yes/예" />
 
                         <RadioButton
                             android:id="@+id/rg2_11_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="No" />
+                            android:text="No/아니요" />
 
                     </RadioGroup>
 
